@@ -1,0 +1,173 @@
+* {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  color: black;
+  font-family: Arial, Helvetica, sans-serife;
+  background: #222222;
+}
+
+a {
+  color: #C0392B;
+}
+
+a:hover {
+  color: #222222;
+}
+
+span {
+  font-size: .8em;
+}
+
+.container {
+  width: 30em;
+  height: auto;
+  padding: 1.5em;
+  margin: 0 auto;
+  background: #f1f1f1;
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+}
+
+nav ul {
+  display: block;
+}
+nav ul li {
+  display: inline;
+  padding: .5em;
+}
+
+article {
+  margin: 1.5em 0;
+}
+
+
+/*
+ * Github Ribbon (by Tim Pietrusky) 
+ * http://codepen.io/TimPietrusky/pen/ysqrg
+*/
+
+
+/*
+ * Basic styles for the ribbon__modifiers
+ */
+.ribbon.ribbon__alpha, .ribbon.ribbon__beta, .ribbon.ribbon__gamma, .ribbon.ribbon__delta {
+  color: white;
+  box-shadow: 0 0 0 0.75em rgba(255, 255, 255, 0);
+  -webkit-transition: color 0.35s ease-in, box-shadow 0.215s ease-out;
+  -moz-transition: color 0.35s ease-in, box-shadow 0.215s ease-out;
+  -o-transition: color 0.35s ease-in, box-shadow 0.215s ease-out;
+  transition: color 0.35s ease-in, box-shadow 0.215s ease-out;
+}
+.ribbon.ribbon__alpha:hover, .ribbon.ribbon__beta:hover, .ribbon.ribbon__gamma:hover, .ribbon.ribbon__delta:hover {
+  background: white;
+  box-shadow: 0 0 0 0.25em rgba(255, 255, 255, 0.4);
+}
+
+/* 
+ * GitHub ribbon base class
+ */
+.ribbon {
+  position: absolute;
+  padding: 0.5em;
+  font-size: 1.35em;
+  text-decoration: none;
+  /* 
+   * Position of the ribbon
+   */
+  /* 
+   * Style for the ribbon
+   */
+}
+@media (max-width: 44em) {
+  .ribbon {
+    font-size: 1em;
+  }
+}
+.ribbon.ribbon--top-left {
+  top: 0;
+  left: 0.5em;
+}
+.ribbon.ribbon--top-right {
+  top: 0;
+  right: 0.5em;
+}
+.ribbon.ribbon--bottom-left {
+  bottom: 0;
+  left: 0.5em;
+}
+.ribbon.ribbon--bottom-right {
+  bottom: 0;
+  right: 0.5em;
+}
+.ribbon.ribbon__alpha {
+  background: #3498db;
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #3498db), color-stop(100%, #2980b9));
+  background: -webkit-linear-gradient(top, #3498db, #2980b9);
+  background: -moz-linear-gradient(top, #3498db, #2980b9);
+  background: -o-linear-gradient(top, #3498db, #2980b9);
+  background: linear-gradient(top, #3498db, #2980b9);
+  background: -webkit-gradient(linear, to bottom, to top, color-stop(0%, #3498db), color-stop(100%, #2980b9));
+  background: -webkit-linear-gradient(to bottom, #3498db, #2980b9);
+  background: -moz-linear-gradient(to bottom, #3498db, #2980b9);
+  background: -o-linear-gradient(to bottom, #3498db, #2980b9);
+  background: linear-gradient(to bottom, #3498db, #2980b9);
+}
+.ribbon.ribbon__alpha:hover {
+  color: #3498db;
+}
+.ribbon.ribbon__beta {
+  background: #e74c3c;
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #e74c3c), color-stop(100%, #c0392b));
+  background: -webkit-linear-gradient(top, #e74c3c, #c0392b);
+  background: -moz-linear-gradient(top, #e74c3c, #c0392b);
+  background: -o-linear-gradient(top, #e74c3c, #c0392b);
+  background: linear-gradient(top, #e74c3c, #c0392b);
+  background: -webkit-gradient(linear, to bottom, to top, color-stop(0%, #e74c3c), color-stop(100%, #c0392b));
+  background: -webkit-linear-gradient(to bottom, #e74c3c, #c0392b);
+  background: -moz-linear-gradient(to bottom, #e74c3c, #c0392b);
+  background: -o-linear-gradient(to bottom, #e74c3c, #c0392b);
+  background: linear-gradient(to bottom, #e74c3c, #c0392b);
+}
+.ribbon.ribbon__beta:hover {
+  color: #e74c3c;
+}
+.ribbon.ribbon__gamma {
+  background: #2ecc71;
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #2ecc71), color-stop(100%, #27ae60));
+  background: -webkit-linear-gradient(top, #2ecc71, #27ae60);
+  background: -moz-linear-gradient(top, #2ecc71, #27ae60);
+  background: -o-linear-gradient(top, #2ecc71, #27ae60);
+  background: linear-gradient(top, #2ecc71, #27ae60);
+  background: -webkit-gradient(linear, to bottom, to top, color-stop(0%, #2ecc71), color-stop(100%, #27ae60));
+  background: -webkit-linear-gradient(to bottom, #2ecc71, #27ae60);
+  background: -moz-linear-gradient(to bottom, #2ecc71, #27ae60);
+  background: -o-linear-gradient(to bottom, #2ecc71, #27ae60);
+  background: linear-gradient(to bottom, #2ecc71, #27ae60);
+}
+.ribbon.ribbon__gamma:hover {
+  color: #2ecc71;
+}
+.ribbon.ribbon__delta {
+  background: #e67e22;
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #e67e22), color-stop(100%, #d35400));
+  background: -webkit-linear-gradient(top, #e67e22, #d35400);
+  background: -moz-linear-gradient(top, #e67e22, #d35400);
+  background: -o-linear-gradient(top, #e67e22, #d35400);
+  background: linear-gradient(top, #e67e22, #d35400);
+  background: -webkit-gradient(linear, to bottom, to top, color-stop(0%, #e67e22), color-stop(100%, #d35400));
+  background: -webkit-linear-gradient(to bottom, #e67e22, #d35400);
+  background: -moz-linear-gradient(to bottom, #e67e22, #d35400);
+  background: -o-linear-gradient(to bottom, #e67e22, #d35400);
+  background: linear-gradient(to bottom, #e67e22, #d35400);
+}
+.ribbon.ribbon__delta:hover {
+  color: #e67e22;
+}
